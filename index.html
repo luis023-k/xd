@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ciclo del Agua Responsive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="controls">
+    <label>
+      Intensidad de lluvia:
+      <input type="range" id="rainIntensity" min="0" max="100" value="50">
+    </label>
+    <label>
+      Velocidad de evaporación:
+      <input type="range" id="evaporationSpeed" min="0" max="5" step="0.1" value="2">
+    </label>
+  </div>
+
+  <div id="sun"></div>
+  <div id="ground"></div>
+  <div id="mountain"></div>
+  <div id="mountain2"></div>
+  <div id="river"></div>
+  <div id="arena"></div>
+  <div id="cloud" draggable="true"></div>
+
+
+  <!-- Nubes progresivas -->
+  <div class="cloud" id="cloud1" style="left: 20%;"></div>
+  <div class="cloud" id="cloud2" style="left: 35%;"></div>
+  <div class="cloud" id="cloud3" style="left: 50%;"></div>
+  <div class="cloud" id="cloud4" style="left: 65%;"></div>
+  <div class="cloud" id="cloud5" style="left: 80%;"></div>
+
+  <canvas id="canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
