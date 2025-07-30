@@ -44,7 +44,7 @@ function updateDrops() {
     ctx.stroke();
     if (drop.y + drop.length > canvas.height - canvas.height * 0.1 - puddleHeight &&
         drop.x > cloudX - cloudWidth / 2 && drop.x < cloudX + cloudWidth / 2) {
-      puddleHeight = Math.min(puddleHeight + 0.05, 100);
+      puddleHeight = Math.min(puddleHeight + 0.05, 500);
     }
   });
 }
